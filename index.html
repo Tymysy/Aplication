@@ -21,8 +21,6 @@
             <input id="InP" type="text" placeholder="Price">
             <input id="InY" type="text" placeholder="Year">
             <form method="post">
-                {% csrf_token %}
-                {{ form.as_p }}
                 <button id="CreateBtn" type="submit">create</button>
             </form>
         </div>
