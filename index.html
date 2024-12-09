@@ -26,20 +26,18 @@
         </div>
 
         <div class="container-products">
-            {% for car in cars %}
-                <div class="container-announcemet">
-                    <div class="img-container">
-                        <img src="">
-                    </div>
-                    <ul>
-                        <i id="announ-icon" class="bi bi-car-front"></i><p class="announ-p" id="OutM">{{ car.model }}</p>
-                        <i id="announ-icon" class="bi bi-p-circle"></i><p class="announ-p" id="OutHP">{{ car.power }} hp</p>
-                        <i id="announ-icon" class="bi bi-tag"></i><p class="announ-p" id="OutP"> {{ car.price }} $</p>
-                        <i id="announ-icon" class="bi bi-calendar2"></i><p class="announ-p" id="OutY">{{ car.year }}</p>
-                    </ul>
+            <div class="container-announcement">
+                <div class="img-container">
+                    <img src="">
                 </div>
-            {% endfor %}
-        </div>
+                <ul>
+                    <i id="announ-icon" class="bi bi-car-front"></i><p class="announ-p" id="OutM">{{ car.model }}</p>
+                    <i id="announ-icon" class="bi bi-p-circle"></i><p class="announ-p" id="OutHP">{{ car.power }} hp</p>
+                    <i id="announ-icon" class="bi bi-tag"></i><p class="announ-p" id="OutP"> {{ car.price }} $</p>
+                    <i id="announ-icon" class="bi bi-calendar2"></i><p class="announ-p" id="OutY">{{ car.year }}</p>
+                </ul>
+            </div>
+        </div>  
     </div>
     
     <script src="./java/script.js"></script>
